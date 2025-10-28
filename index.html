@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Главная | Сколько дней мы любим друг друга?</title>
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo">Мы ❤️</a>
+      
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active-link">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a href="memories.html" class="nav-link">Воспоминания</a>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link">Галерея</a>
+          </li>
+        </ul>
+        
+        <button class="nav-close" id="nav-close" aria-label="Закрыть меню">
+          &times;
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню">
+        &#9776;
+      </button>
+    </nav>
+  </header>
+  <main class="page">
+    <section class="card card-popup" role="region" aria-labelledby="title">
+      <div class="photo-container" aria-hidden="true">
+        <img src="IKWAGhctScM.jpg" alt="Мы вместе" />
+      </div>
+
+      <div class="content">
+        <h1 id="title" class="fade-in">Мы любим друг друга уже:</h1>
+        <p id="loveDuration" class="fade-in" aria-live="polite">Загрузка... <span class="heart-icon">❤️‍🔥</span></p>
+        <p id="todayDate" class="muted small">—</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // удобная правка даты прямо в HTML
+    window.LOVE_START = "2024-10-17T21:51:00+05:00";
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
